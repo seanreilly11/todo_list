@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: #ffe259; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffe259, #ffa751);
+    background: linear-gradient(to right, #ffe259, #ffa751);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 60vh;
+    height: 75vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    line-height: .4;
+}
+
+.header{
+    padding: 1em 1.2em .5em 1.2em;
+    font-weight: 600;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+
+}
+
+i{
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.todo-body{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+.todoInput{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.todo-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-list .todo-item{
+    padding: 20px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.todo-list .todo-item.checked{
+    text-decoration: line-through;
+}
+
+/*Scroll bar styling*/
+.todo-body::-webkit-scrollbar{
+    background: transparent;
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: darkgrey;
+}
